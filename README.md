@@ -2,10 +2,6 @@
 
 SmartRoute is a graph-based route optimization web application built with Python, OSMnx, NetworkX, Folium, and Streamlit.
 
-The application uses real-world OpenStreetMap data to model roads as weighted graphs and compute shortest routes between locations around San José State University.
-
----
-
 ## Features
 
 - Real OpenStreetMap street data
@@ -17,8 +13,6 @@ The application uses real-world OpenStreetMap data to model roads as weighted gr
 - Travel time estimation
 - SJSU landmark dropdown locations
 
----
-
 ## Technologies Used
 
 - Python
@@ -28,19 +22,12 @@ The application uses real-world OpenStreetMap data to model roads as weighted gr
 - Streamlit
 - Streamlit-Folium
 
----
+## How to Run
 
-## Project Structure
-
-```text
-SmartRoute/
-├── app.py
-├── README.md
-├── requirements.txt
-├── screenshots/
-├── src/
-│   ├── routing.py
-│   ├── map_viz.py
-│   └── utils.py
-├── outputs/
-└── test_route.py
+```bash
+git clone https://github.com/andymhuynh/SmartRoute.git
+cd SmartRoute
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+streamlit run app.py
